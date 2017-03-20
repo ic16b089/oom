@@ -115,7 +115,7 @@ namespace Task2
 		public void Update_Divers_Logbook(decimal newDive_Nr, string newDive_Location, decimal reached_Depth)
 		{
 			if (newDive_Nr < 0) throw new ArgumentException("Dive Number must be given and greater 0.", nameof(newDive_Nr));
-			if (string.IsNullOrWhiteSpace(newDive_Location)) throw new ArgumentException("ISBN must not be empty.", nameof(newDive_Location));
+			if (string.IsNullOrWhiteSpace(newDive_Location)) throw new ArgumentException("Dive Location must not be empty.", nameof(newDive_Location));
 			if (reached_Depth < 0) throw new ArgumentException("Depth must be given and greater 0.", nameof(reached_Depth));
 			Dive_Nr = newDive_Nr;
 			Location = newDive_Location;
