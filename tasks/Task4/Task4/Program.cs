@@ -62,6 +62,7 @@ namespace Task4
 		private decimal m_decimal;
 		private string m_string;
 
+
 		/// <summary>
 		/// constructor, creates a new object, the Divers_Logbook.
 		/// </summary>
@@ -183,9 +184,9 @@ namespace Task4
 				}
 			}
 
-			Dive_Nr = newDive_Nr;
-			Location = m_location;
-			Depth = m_depth;
+			///Dive_Nr = newDive_Nr;
+			///Location = m_location;
+			///Depth = m_depth;
 		}
 
 		/// <summary>
@@ -208,26 +209,21 @@ namespace Task4
 
 
 		/// <summary>
-		/// SD ivers logbook. Trying Serialisation
+		/// Divers logbook. Trying Serialisation
 		/// </summary>
 
-		public class SDivers_Logbook
-		{ 
-			public decimal SDive_Nr { get; set; }
-			public string SLocation { get; set; }
-			public decimal SDepth { get; set; }
-		}
 
 		/// Divers_Logbook sdivers_logbook = new Divers_Logbook(1, 1, 2, "Dummy", 23);
-		SDivers_Logbook sdivers_logbook = new SDivers_Logbook
-		{
-			SDive_Nr = 1,
-			SLocation = "Fidschii",
-			SDepth = 25
-		};
+		///Divers_Logbook sdivers_logbook = new Divers_Logbook()
+		///{
+		///	Dive_Nr = 1,
+		///	Location = "Fidschii",
+		///	Depth = 25
+		///};
 
-		string json = JsonConvert.SerializeObject(sdivers_logbook);
-		Console.Writeline(json);
+		///string json = JsonConvert.SerializeObject(sdivers_logbook);
+		///Console.Writeline(json);
+		///Console.WriteLine(JsonConvert.SerializeObject(sdivers_logbook));
 		/// END ##################
 
 

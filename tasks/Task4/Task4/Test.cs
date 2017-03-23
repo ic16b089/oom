@@ -1,6 +1,5 @@
 ﻿using System;
 using NUnit.Framework;
-
 using Task4;
 
 namespace Task4
