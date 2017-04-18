@@ -1,5 +1,4 @@
-﻿using System;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 
 namespace Task4_Reincarnation
@@ -35,7 +34,7 @@ namespace Task4_Reincarnation
 			Assert.Catch(() =>
 			{
 				var x = new Divers_Logbook(1, "Hawaii", 27, Dive_Type.Oxygen_Dive);
-				x.Update_Dive(-4, "Hawaii", -27, Dive_Type.Oxygen_Dive);
+				x.Update_Dive(-4, "Hawaii", 27, Dive_Type.Oxygen_Dive);
 			});
 		}
 		[Test]
@@ -52,8 +51,8 @@ namespace Task4_Reincarnation
 		{
 			Assert.Catch(() =>
 			{
-				var x = new Divers_Logbook(1, "Hawaii", -27, Dive_Type.Oxygen_Dive);
-				x.Update_Dive(4, "", 27, Dive_Type.Oxygen_Dive);
+				var x = new Divers_Logbook(1, "Hawaii", 27, Dive_Type.Oxygen_Dive);
+				x.Update_Dive(4, "Hawaii", -27, Dive_Type.Oxygen_Dive);
 			});
 		}
 		[Test]

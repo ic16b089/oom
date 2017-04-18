@@ -1,6 +1,4 @@
 ﻿using System;
-
-using System.Collections.Generic; 
 using System.IO; 
 using Newtonsoft.Json;
 
@@ -28,7 +26,7 @@ namespace Task4_Reincarnation
  
  
             // Deserialize
-            // Read from file "divers_logbook.json" and print Description and Price of deserialized items 
+            // Read from file "divers_logbook.json" and print the content of deserialized items of Divers Logbook 
 			Console.WriteLine("\n\n Deserialise and Read from File <{0}>\n\n", filename);
 			var textFromFile = File.ReadAllText(filename);
 			Console.WriteLine(textFromFile);

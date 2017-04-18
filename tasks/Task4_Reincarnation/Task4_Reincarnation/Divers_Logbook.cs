@@ -1,7 +1,5 @@
 ﻿using System;
-
 using Newtonsoft.Json;
-
 
 namespace Task4_Reincarnation
 {
@@ -32,6 +30,7 @@ namespace Task4_Reincarnation
 		/// Constructor
 		/// Initializes a new instance of the <see cref="T:Task4_Reincarnation.Divers_Logbook"/> class.
 		/// </summary>
+		/// <param name="dive_number">Dive number.</param>
 		/// <param name="dive_location">Dive location.</param>
 		/// <param name="dive_depth">Dive depth.</param>
 		/// <param name="dive_type">Dive type.</param>
@@ -79,6 +78,7 @@ namespace Task4_Reincarnation
 		/// Public Method
 		/// Updates the dive.
 		/// </summary>
+		/// <param name="newdive_number">Newdive number.</param>
 		/// <param name="newdive_location">Newdive location.</param>
 		/// <param name="newdive_depth">Newdive depth.</param>
 		/// <param name="newdive_type">Newdive type.</param>
